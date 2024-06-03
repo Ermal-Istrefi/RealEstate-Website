@@ -1,281 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>About Us</title>
+   <title>Home-Rreth Nesh</title>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="image/icon">
+   <link rel="icon" href="../images/home-icon.png" type="image/x-icon" />
 
-   <!-- font awesome cdn link  -->
+   <script src="../JavaScript/script.js" defer></script>
+
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="../CSS/style.css">
+   <link rel="stylesheet" href="../CSS/about.css">
 
 </head>
+
 <body>
-   
-<!-- header section starts  -->
 
-<header class="header">
+   <!-- Pjesa e header - fillimi  -->
 
-   <nav class="navbar nav-1">
-      <section class="flex">
-         <a href="home.html" class="logo"><i class="fas fa-house"></i>MyHome</a>
-      </section>
-   </nav>
-
-   <nav class="navbar nav-2">
-      <section class="flex">
-         <div id="menu-btn" class="fas fa-bars"></div>
-
-         <div class="menu">
-            <ul>
-               <li><a href="home.html">Kryefaqja</a></li>
-               <li><a href="buy.html">Blej</a></li>
-               <li><a href="#">Listo Pronën</a></li>
-               <li><a href="#">rent<i class="fas fa-angle-down"></i></a>
+   <header class="header">
+      <nav class="navbar">
+         <div class="flex">
+            <div class="logo">
+               <a href="home.html"><i class="fas fa-house"></i>KosovaHome</a>
+            </div>
+            <div class="menu">
+               <div id="menu-btn" class="fas fa-bars"></div>
+               <div class="menu-content">
                   <ul>
-                     <li><a href="#">house</a></li>
-                     <li><a href="#">flat</a></li>
-                     <li><a href="#">shop</a></li>
+                     <li><a href="home.html">Kryefaqja</a></li>
+                     <li><a href="buy.html">Blej</a></li>
+                     <li><a href="listopronën.html">Listo Pronën</a></li>
+                     <li><a href="#">Me qera<i class="fas fa-angle-down"></i></a>
+                        <ul>
+                           <li><a href="#">Shtëpi</a></li>
+                           <li><a href="#">Banesë</a></li>
+                           <li><a href="#">Tokë</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="about.html">Rreth nesh</a></li>
                   </ul>
-               </li>
-               <li><a href="about.html">rreth nesh</a></li>
-            </ul>
-         </div>
-
-         <ul>
-            <li><a href="#">account <i class="fas fa-angle-down"></i></a>
+               </div>
+            </div>
+            <div class="account">
                <ul>
-                  <li><a href="login.html">login</a></li>
-                  <li><a href="register.html">register</a></li>
+                  <li> <a>Llogaria <i class="fas fa-angle-down"></i></a>
+                     <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                     </ul>
+                  </li>
                </ul>
-            </li>
-         </ul>
-      </section>
-   </nav>
-
-</header>
-
-<!-- header section ends -->
-
-<!-- about section starts  -->
-
-<section class="about">
-
-   <div class="row">
-      <div class="image">
-         <img src="images/about-img.svg" alt="">
-      </div>
-      <div class="content">
-         <h3>why choose us?</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolorem provident voluptatum distinctio laborum veritatis vitae suscipit praesentium fugiat unde?</p>
-         <a href="contact.html" class="inline-btn">contact us</a>
-      </div>
-   </div>
-
-</section>
-
-<!-- about section ends -->
-
-<!-- steps section starts  -->
-
-<section class="steps">
-
-   <h1 class="heading">3 simple steps</h1>
-
-   <div class="box-container">
-
-      <div class="box">
-         <img src="images/step-1.png" alt="">
-         <h3>search property</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, placeat.</p>
-      </div>
-
-      <div class="box">
-         <img src="images/step-2.png" alt="">
-         <h3>contact agents</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, placeat.</p>
-      </div>
-
-      <div class="box">
-         <img src="images/step-3.png" alt="">
-         <h3>enjoy property</h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, placeat.</p>
-      </div>
-
-   </div>
-
-</section>
-
-<!-- steps section ends -->
-
-<!-- review section starts  -->
-
-<section class="reviews">
-
-   <h1 class="heading">client's reviews</h1>
-
-   <div class="box-container">
-
-      <div class="box">
-         <div class="user">
-            <img src="images/pic-1.png" alt="">
-            <div>
-               <h3>john deo</h3>
-               <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-               </div>
             </div>
          </div>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci voluptates delectus distinctio quam sequi error eum suscipit tempore inventore ex!</p>
+      </nav>
+   </header>
+
+   <!-- Pjesa e header - fundi -->
+
+   <!-- about section starts  -->
+
+   <section class="about">
+
+      <div class="row">
+         <div class="image">
+            <img src="../images/about.png" alt="">
+         </div>
+         <div class="content">
+            <h3>Përse duhet të na zgjedhni ne?</h3>
+            <p>Webfaqja jonë ofron akses të për të gjithë ata që dëshirojnë të kenë njohuri të detajuara të pronave dhe
+               udhëzime të personalizuara për pasuritë e paluajtshme për t'ju ndihmuar të merrni vendime të informuara.
+            </p>
+         </div>
       </div>
 
-      <div class="box">
-         <div class="user">
-            <img src="images/pic-2.png" alt="">
-            <div>
-               <h3>john deo</h3>
-               <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
+   </section>
+
+   <!-- about section ends -->
+
+
+   <!-- review section starts  -->
+
+   <section class="reviews">
+
+      <h1 class="heading">Komentet e klientëve</h1>
+
+      <div class="box-container">
+
+         <div class="box">
+            <div class="user">
+               <img src="images/pic-1.png" alt="">
+               <div>
+                  <h3>Klienti 1</h3>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
                </div>
             </div>
+            <p>Faqja e internetit është fantastike. Paraqitja është intuitive dhe gjeta pikërisht atë që kërkoja pa
+               asnjë problem. Përshkrimet e detajuara të pronës dhe fotot me cilësi të lartë më ndihmuan vërtet të merrja
+               një vendim të informuar. Tani kjo është faqja ime e preferuar për të kërkuar shtëpi/apartemente apo prona.</p>
          </div>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci voluptates delectus distinctio quam sequi error eum suscipit tempore inventore ex!</p>
-      </div>
 
-      <div class="box">
-         <div class="user">
-            <img src="images/pic-3.png" alt="">
-            <div>
-               <h3>john deo</h3>
-               <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
+         <div class="box">
+            <div class="user">
+               <img src="../images/pic-2.png" alt="">
+               <div>
+                  <h3>Klienti 2</h3>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
                </div>
             </div>
+            <p>Unë u mahnita nga shumëllojshmëria e listimeve të disponueshme në këtë faqe. Është kaq e lehtë për t'u
+               lundruar dhe filtrat e kërkimit më lejuan të ngushtoj shpejt opsionet e mia. Plus, këshillat e ekspertëve
+               dhe seksionet e këshillave janë tepër të dobishme. Ky është tani faqja ime e preferuar për pasuri të paluajtshme.</p>
          </div>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci voluptates delectus distinctio quam sequi error eum suscipit tempore inventore ex!</p>
-      </div>
 
-      <div class="box">
-         <div class="user">
-            <img src="images/pic-4.png" alt="">
-            <div>
-               <h3>john deo</h3>
-               <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
+         <div class="box">
+            <div class="user">
+               <img src="../images/pic-3.png" alt="">
+               <div>
+                  <h3>Klienti 3</h3>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
                </div>
             </div>
+            <p>Si një blerës shtëpie për herë të parë, unë u trondita nga procesi, por kjo faqe interneti e bëri
+               gjithçka shumë më të thjeshtë. Dizajni i përshtatshëm për përdoruesit dhe njohuritë gjithëpërfshirëse të
+               tregut më dhanë besimin që më duhej. Këtu gjeta shtëpinë time të ëndrrave dhe nuk mund të isha më e
+               lumtur.</p>
          </div>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci voluptates delectus distinctio quam sequi error eum suscipit tempore inventore ex!</p>
-      </div>
 
-      <div class="box">
-         <div class="user">
-            <img src="images/pic-5.png" alt="">
-            <div>
-               <h3>john deo</h3>
-               <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
+         <div class="box">
+            <div class="user">
+               <img src="../images/pic-4.png" alt="">
+               <div>
+                  <h3>Klienti 4</h3>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
                </div>
             </div>
+            <p>Unë kam vizituar shumë faqe interneti të pasurive të paluajtshme, por kjo bie në sy. Navigimi pa
+               probleme, listat e gjera dhe mbështetja profesionale janë të nivelit të lartë. Unë kam qenë në gjendje të
+               listoj pronën time dhe të tërheq shpejt blerësit e mundshëm. Shërbim i shkëlqyer dhe shumë efikas.</p>
          </div>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci voluptates delectus distinctio quam sequi error eum suscipit tempore inventore ex!</p>
-      </div>
-
-      <div class="box">
-         <div class="user">
-            <img src="images/pic-6.png" alt="">
-            <div>
-               <h3>john deo</h3>
-               <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-               </div>
-            </div>
-         </div>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci voluptates delectus distinctio quam sequi error eum suscipit tempore inventore ex!</p>
-      </div>
-
-   </div>
-
-</section>
-
-<!-- review section ends -->
-
-
-
-
-
-
-
-
-
-
-<!-- footer section starts  -->
-
-<footer class="footer">
-
-   <section class="flex">
-
-      <div class="box">
-         <a href="tel:1234567890"><i class="fas fa-phone"></i><span>123456789</span></a>
-         <a href="tel:1112223333"><i class="fas fa-phone"></i><span>1112223333</span></a>
-         <a href="mailto:shaikhanas@gmail.com"><i class="fas fa-envelope"></i><span>shaikhanas@gmail.com</span></a>
-         <a href="#"><i class="fas fa-map-marker-alt"></i><span>mumbai, india - 400104</span></a>
-      </div>
-
-      <div class="box">
-         <a href="home.html"><span>home</span></a>
-         <a href="about.html"><span>about</span></a>
-         <a href="contact.html"><span>contact</span></a>
-         <a href="listings.html"><span>all listings</span></a>
-         <a href="#"><span>saved properties</span></a>
-      </div>
-
-      <div class="box">
-         <a href="#"><span>facebook</span><i class="fab fa-facebook-f"></i></a>
-         <a href="#"><span>twitter</span><i class="fab fa-twitter"></i></a>
-         <a href="#"><span>linkedin</span><i class="fab fa-linkedin"></i></a>
-         <a href="#"><span>instagram</span><i class="fab fa-instagram"></i></a>
 
       </div>
 
    </section>
 
-   <div class="credit">&copy; copyright @ 2022 by <span>mr. web designer</span> | all rights reserved!</div>
-
-</footer>
-
-<!-- footer section ends -->
+   <!-- review section ends -->
 
 
-<!-- custom js file link  -->
-<script src="../JavaScript/script.js"></script>
+
+
+
+
+
+
+
+
+   <!-- Footer - fillimi  -->
+
+   <footer class="footer">
+
+      <section class="flex">
+
+         <div class="box">
+            <a href="tel:1234567890"><i class="fas fa-phone"></i><span>044886775</span></a>
+            <a href="tel:1112223333"><i class="fas fa-phone"></i><span>038446719</span></a>
+            <a href="mailto:shaikhanas@gmail.com"><i class="fas fa-envelope"></i><span>kososvahome@gmail.com</span></a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i><span>Mitrovic, Kosovë, 40000</span></a>
+         </div>
+
+         <div class="box">
+            <a href="home.html"><span>Kryefaqja</span></a>
+            <a href="about.html"><span>Rreth nesh</span></a>
+            <a href="contact.html"><span>Rreth nesh</span></a>
+         </div>
+
+         <div class="box">
+            <a href="#"><span>Facebook</span><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><span>Twitter</span><i class="fab fa-twitter"></i></a>
+            <a href="#"><span>Linkedin</span><i class="fab fa-linkedin"></i></a>
+            <a href="#"><span>Instagram</span><i class="fab fa-instagram"></i></a>
+
+         </div>
+
+      </section>
+
+
+   </footer>
+
+   <!-- Footer - fundi -->
+
+
+   <!-- custom js file link  -->
+   <script src="../JavaScript/script.js"></script>
 
 </body>
+
 </html>

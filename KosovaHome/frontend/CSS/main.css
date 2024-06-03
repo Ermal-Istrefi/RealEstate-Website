@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+
+/* general fillimi */
+:root {
+   --main-color: #0fa40f;
+   --light-color: #ffffff;
+   --light-bg: #626060;
+   --white: #f7f7f7;
+   --black: #212020;
+   --border: .1rem solid var(--light-color);
+   --box-shodow: 0 .5rem 1rem #101210;
+}
+
+* {
+   font-family: 'Montserrat', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+}
+
+*::selection {
+   background-color: var(--main-color);
+   color: var(--white);
+}
+
+html {
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 10rem;
+}
+
+body {
+   background-color: var(--light-bg);
+}
+
+section {
+   padding: 3rem 2rem;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.heading {
+   text-align: center;
+   padding-bottom: 2.5rem;
+   font-size: 3rem;
+   color: var(--light-color);
+   text-transform: capitalize;
+}
+
+.btn,
+.inline-btn {
+   margin-top: 1rem;
+   padding: 1rem 3rem;
+   background-color: var(--main-color);
+   color: var(--white);
+   cursor: pointer;
+   text-align: center;
+   font-size: 1.8rem;
+   text-transform: capitalize;
+}
+
+.btn:hover,
+.inline-btn:hover {
+   background-color: var(--black);
+}
+
+.btn {
+   display: block;
+   width: 100%;
+}
+
+.inline-btn {
+   display: inline-block;
+}
+
+/* general fundi */
+
+
+/* header fillimi */
+.header {
+   position: sticky;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 1000;
+   box-shadow: var(--box-shodow);
+}
+
+.header .navbar {
+   background-image: linear-gradient(to top, green, black);
+}
+
+.header .navbar .flex {
+   margin-left: 2rem;
+   margin-right: 2rem;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header .navbar .flex .logo {
+   font-size: 3.2rem;
+}
+
+.header .navbar .flex .logo a{
+   color: var(--white);
+   font-weight: bolder;
+}
+
+
+.header .navbar .flex .logo i {
+   color: var(--main-color);
+   margin-right: 1rem;
+}
+
+.header .navbar .flex ul {
+   list-style: none;
+}
+
+.header .navbar .flex ul li {
+   float: left;
+   position: relative;
+}
+
+.header .navbar .flex ul li a {
+   display: inline-block;
+   padding: 1.2rem 2rem;
+   font-size: 2rem;
+   color: var(--white);
+   font-weight: bolder;
+}
+
+.header .navbar .flex ul li a:hover {
+   background-color: var(--main-color);
+   color: var(--white);
+}
+
+.header .navbar .flex ul li a i {
+   margin-left: 1rem;
+}
+
+.header .navbar .flex ul li ul {
+   position: absolute;
+   width: 17rem;
+   left: 0;
+   background-image: linear-gradient(to top, green, black);
+}
+
+.header .navbar .flex ul li ul li {
+   width: 100%;
+}
+
+.header .navbar .flex ul li ul li a {
+   display: none;
+}
+
+.header .navbar .flex ul li:hover ul li a {
+   display: block;
+}
+
+#menu-btn {
+   font-size: 2.5rem;
+   color: var(--black);
+   display: none;
+}
+
+/* header fundi */
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background-color: var(--black);
+    margin-top: 270px;
+ }
+ 
+ .footer .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+ }
+ 
+ .footer .flex .box{
+    flex: 1 1 30rem;
+ }
+ 
+ .footer .flex .box a{
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+ }
+ 
+ .footer .flex .box a span{
+    color: var(--white);
+ }
+ 
+ .footer .flex .box a:hover span{
+    text-decoration: underline;
+ }
+ 
+ .footer .flex .box a i{
+    color: var(--main-color);
+ }
+ 
+ .footer .flex .box:last-child{
+    text-align: right;
+ }
+ 
+ .footer .flex .box:last-child a i{
+    margin-left: 1.5rem;
+ }
+ 
+ .footer .flex .box:first-child a i{
+    margin-right: 1.5rem;
+ }
+ 
+ .footer .flex .box:nth-child(2){
+    text-align: center;
+ }
+ 
+ .footer .credit{
+    padding: 3rem 2rem;
+    text-align: center;
+    border-top: var(--border);
+    font-size: 2rem;
+    color: var(--white);
+    margin-top: 2rem;
+    /* padding-bottom: 10rem; */
+ }
+ 
+ .footer .credit span{
+    color: var(--main-color);
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* media queries  */
+ 
+ @media (max-width:991px){
+ 
+    html{
+       font-size: 55%;
+    }
+ 
+ }
+ 
+ @media (max-width:768px){
+ 
+    #menu-btn{
+       display: inline-block;
+    }
+ 
+    .header .navbar .menu{
+       position: absolute;
+       top: 99%; left: 0; right: 0;
+       background-color: var(--white);
+       border-top: var(--border);
+       transition: .2s linear;
+       z-index:1;
+       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+ 
+    .header .navbar .menu.active{
+       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+ 
+    .header .navbar .menu ul li{
+       width: 100%;
+       position: relative;
+    }
+ 
+    .header .navbar .menu ul li a{
+       width: 100%;
+    }
+ 
+    .header .navbar .menu ul li ul{
+       position: relative;
+       width: 100%;
+    }
+ 
+    .header .navbar .menu ul li ul li a{
+       padding-left: 4rem;
+       background-color: var(--black);
+       color: var(--white);
+    }
+ 
+    .view-property .details .thumb .big-image img{
+       height: auto;
+    }
+ 
+    .view-property .details .thumb .small-images img{
+       height: 4rem;
+       width: 6rem;
+    }
+ 
+    #filter-btn{
+       display: inline-block;
+    }
+ 
+    .filters{
+       position: fixed;
+       top: 0; left: 0; right: 0; bottom: 0;
+       overflow-y: scroll;
+       background-color: var(--white);
+       z-index: 1100;
+       padding: 0;
+       display: none;
+    }
+ 
+    .filters.active{
+       display: block;
+    }
+ 
+    .filters form{
+       box-shadow: none;
+    }
+ 
+    .filters form #close-filter{
+       display: block;
+    }
+ 
+ }
+ 
+ @media (max-width:450px){
+ 
+    html{
+       font-size: 50%;
+    }
+ 
+    .header .navbar .flex .logo{
+       font-size: 1.8rem;
+    }
+ 
+    .home .center form .flex{
+       gap: 0;
+    }
+ 
+    .listings .box-container{
+       grid-template-columns: 1fr;
+    }
+ 
+    .reviews .box-container{
+       grid-template-columns: 1fr;
+    }
+ 
+ }

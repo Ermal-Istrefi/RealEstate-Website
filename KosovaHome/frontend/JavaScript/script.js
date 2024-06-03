@@ -26,3 +26,4 @@ document.querySelectorAll('.faq .box-container .box h3').forEach(headings =>{
       headings.parentElement.classList.toggle('active');
    }
 });
+

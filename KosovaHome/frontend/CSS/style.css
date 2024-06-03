@@ -1,57 +1,58 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
 
-:root{
-   --main-color:#DA2C32;
-   --light-color:#666;
-   --light-bg:#eee;
-   --white:#fff;
-   --black:#303030;
-   --border:.1rem solid var(--light-color);
-   --box-shodow:0 .5rem 1rem rgba(0,0,0,.1);
+:root {
+   --main-color: #0fa40f;
+   --light-color: #ffffff;
+   --light-bg: #626060;
+   --white: #f7f7f7;
+   --black: #212020;
+   --border: .1rem solid var(--light-color);
+   --box-shodow: 0 .5rem 1rem #101210;
 }
 
-*{
+* {
    font-family: 'Montserrat', sans-serif;
-   margin: 0; padding: 0;
+   margin: 0;
+   padding: 0;
    box-sizing: border-box;
-   outline: none; border: none;
+   outline: none;
+   border: none;
    text-decoration: none;
-
 }
 
-*::selection{
+*::selection {
    background-color: var(--main-color);
    color: var(--white);
 }
 
-
-html{
+html {
    font-size: 62.5%;
    overflow-x: hidden;
    scroll-behavior: smooth;
    scroll-padding-top: 10rem;
 }
 
-body{
+body {
    background-color: var(--light-bg);
 }
 
-section{
+section {
    padding: 3rem 2rem;
    max-width: 1200px;
    margin: 0 auto;
 }
 
-.heading{
+.heading {
    text-align: center;
    padding-bottom: 2.5rem;
    font-size: 3rem;
-   color: var(--black);
+   color: var(--light-color);
    text-transform: capitalize;
 }
 
 .btn,
-.inline-btn{
+.inline-btn {
    margin-top: 1rem;
    padding: 1rem 3rem;
    background-color: var(--main-color);
@@ -63,114 +64,114 @@ section{
 }
 
 .btn:hover,
-.inline-btn:hover{
+.inline-btn:hover {
    background-color: var(--black);
 }
 
-.btn{
+.btn {
    display: block;
    width: 100%;
 }
 
-.inline-btn{
+.inline-btn {
    display: inline-block;
 }
 
-.header{
+.header {
    position: sticky;
-   top: 0; left: 0; right: 0;
+   top: 0;
+   left: 0;
+   right: 0;
    z-index: 1000;
    box-shadow: var(--box-shodow);
 }
 
-.header .navbar.nav-1 .flex{
+.header .navbar {
+   background-image: linear-gradient(to top, green, black);
+}
+
+.header .navbar .flex {
+   margin-left: 2rem;
+   margin-right: 2rem;
    padding-top: 1rem;
    padding-bottom: 1rem;
-}
-
-.header .navbar.nav-2 .flex{
-   padding-top: 0;
-   padding-bottom: 0;
-}
-
-.header .navbar.nav-1{
-   background-color: var(--black);
-}
-
-.header .navbar.nav-2{
-   background-color: var(--white);
-}
-
-.header .navbar .flex{
    display: flex;
-   align-items: center;
    justify-content: space-between;
+   align-items: center;
 }
 
-.header .navbar .flex .logo{
-   font-size: 2.2rem;
-   color: var(--white); 
+.header .navbar .flex .logo {
+   font-size: 3.2rem;
 }
 
-.header .navbar .flex .logo i{
+.header .navbar .flex .logo a{
+   color: var(--white);
+   font-weight: bolder;
+}
+
+
+.header .navbar .flex .logo i {
    color: var(--main-color);
    margin-right: 1rem;
 }
 
-.header .navbar .flex ul{
+.header .navbar .flex ul {
    list-style: none;
 }
 
-.header .navbar .flex ul li{
+.header .navbar .flex ul li {
    float: left;
    position: relative;
 }
 
-.header .navbar .flex ul li a{
+.header .navbar .flex ul li a {
    display: inline-block;
    padding: 1.2rem 2rem;
-   font-size: 1.8rem;
-   color: var(--black);
-   background-color: var(--white);
+   font-size: 2rem;
+   color: var(--white);
+   font-weight: bolder;
 }
 
-.header .navbar .flex ul li a:hover{
+.header .navbar .flex ul li a:hover {
    background-color: var(--main-color);
    color: var(--white);
 }
 
-.header .navbar .flex ul li a i{
+.header .navbar .flex ul li a i {
    margin-left: 1rem;
 }
 
-.header .navbar .flex ul li ul{
+.header .navbar .flex ul li ul {
    position: absolute;
    width: 17rem;
    left: 0;
+   background-image: linear-gradient(to top, green, black);
 }
 
-.header .navbar .flex ul li ul li{
+.header .navbar .flex ul li ul li {
    width: 100%;
 }
 
-.header .navbar .flex ul li ul li a{
+.header .navbar .flex ul li ul li a {
    display: none;
 }
 
-.header .navbar .flex ul li:hover ul li a{
+.header .navbar .flex ul li:hover ul li a {
    display: block;
 }
 
-#menu-btn{
+#menu-btn {
    font-size: 2.5rem;
    color: var(--black);
    display: none;
 }
 
+/* seksioni i buy */
 .home{
-   background:url('../images/home-bg.jpg') no-repeat;
+   background:url('../images/blej1.jpeg') no-repeat;
    background-size: cover;
    background-position: center;
+   min-height: 95vh;
 }
 
 .home .center{
@@ -375,12 +376,12 @@ section{
 .listings .box-container .box .location{
    padding-top: 1rem;
    font-size: 1.6rem;
-   color: var(--light-color);
+   color: blue;
 }
 
 .listings .box-container .box .location i{
    margin-right: 1rem;
-   color: var(--main-color);
+   color: red;
 }
 
 .listings .box-container .box .flex{
@@ -405,7 +406,7 @@ section{
 
 .listings .box-container .box .flex p i{
    margin-right: 1rem;
-   color: var(--main-color);
+   color: white;
 }
 
 .view-property .details{
@@ -553,9 +554,8 @@ section{
 
 .about .row .content h3{
    font-size: 2.5rem;
-   color: var(--black);
+   color: var(--white);
    margin-bottom: .5rem;
-   text-transform: capitalize;
 }
 
 .about .row .content p{
@@ -565,38 +565,6 @@ section{
    color: var(--light-color);
 }
 
-.steps .box-container{
-   display: grid;
-   grid-template-columns: repeat(auto-fit, 30rem);
-   gap: 2rem;
-   justify-content: center;
-   align-items: flex-start;
-}
-
-.steps .box-container .box{
-   background-color: var(--white);
-   padding: 2rem;
-   text-align: center;
-   box-shadow: var(--box-shodow);
-}
-
-.steps .box-container .box img{
-   height: 7rem;
-   margin: .5rem 0;
-}
-
-.steps .box-container .box h3{
-   padding: 1rem 0;
-   font-size: 2rem;
-   text-transform: capitalize;
-   color: var(--black);
-}
-
-.steps .box-container .box p{
-   line-height: 2;
-   font-size: 1.6rem;
-   color: var(--light-color);
-}
 
 .reviews .box-container{
    display: grid;
@@ -610,6 +578,7 @@ section{
    background-color: var(--white);
    padding: 2rem;
    box-shadow: var(--box-shodow);
+   border-radius: 10px;
 }
 
 .reviews .box-container .box .user{
@@ -640,94 +609,9 @@ section{
    line-height: 2;
    padding-top: .5rem;
    font-size: 1.6rem;
-   color: var(--light-color);
-}
-
-.contact .row{
-   display: flex;
-   flex-wrap: wrap;
-   gap: 1.5rem;
-   align-items: center;
-}
-
-.contact .row .image{
-   flex: 1 1 50rem;
-}
-
-.contact .row .image img{
-   width: 100%;
-}
-
-.contact .row form{
-   flex: 1 1 30rem;
-   background-color: var(--white);
-   box-shadow: var(--box-shodow);
-   padding: 2rem;
-}
-
-.contact .row form h3{
-   padding-bottom: 1rem;
-   font-size: 2.5rem;
    color: var(--black);
-   text-align: center;
-   text-transform: capitalize;
 }
 
-.contact .row form .box{
-   width: 100%;
-   border: var(--border);
-   padding: 1.4rem;
-   color: var(--black);
-   font-size: 1.8rem;
-   margin: 1rem 0;
-}
-
-.contact .row form textarea{
-   height: 15rem;
-   resize: none;
-}
-
-.faq .box-container{
-   display: flex;
-   flex-wrap: wrap;
-   gap: 2rem;
-   align-items: flex-start;
-}
-
-
-.faq .box-container .box{
-   flex: 1 1 40rem;
-   box-shadow: var(--box-shodow);
-}
-
-.faq .box-container .box h3{
-   padding: 1.5rem 2rem;
-   font-size: 2rem;
-   background-color: var(--black);
-   color: var(--white);
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   gap: 1rem;
-   cursor: pointer;
-}
-
-.faq .box-container .box p{
-   font-size: 1.6rem;
-   color: var(--light-color);
-   background-color: var(--white);
-   padding: 1.5rem 2rem;
-   line-height: 1.5;
-   display: none;
-}
-
-.faq .box-container .box.active p{
-   display: block;
-}
-
-.faq .box-container .box.active h3{
-   background-color: var(--main-color);
-}
 
 .filters form{
    background-color: var(--white);
@@ -803,6 +687,10 @@ section{
    display: none;
 }
 
+.form-container{
+   margin-top: 15rem;
+}
+
 .form-container form{
    max-width: 50rem;
    margin: 0 auto;
@@ -810,6 +698,7 @@ section{
    box-shadow: var(--box-shodow);
    padding: 2rem;
    text-align: center;
+   
 }
 
 .form-container form h3{
@@ -831,11 +720,11 @@ section{
 .form-container form p{
    font-size: 1.7rem;
    padding: 1rem 0;
-   color: var(--light-color);
+   color: var(--black);
 }
 
 .form-container form p a{
-   color: var(--main-color);
+   color: blue;
 }
 
 .form-container form p a:hover{
@@ -847,16 +736,9 @@ section{
 
 
 
-
-
-
-
-
-
-
-
 .footer{
    background-color: var(--black);
+   margin-top: 270px;
 }
 
 .footer .flex{

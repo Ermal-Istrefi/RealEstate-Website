@@ -4,63 +4,62 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Home</title>
+   <title>Home-Blej</title>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="image/icon">
+    <link rel="icon" href="../images/home-icon.png"type="image/x-icon"/>
+   
+    <script src="../JavaScript/script.js" defer></script>
 
-   <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="../CSS/style.css">
+   <link rel="stylesheet" href="../CSS/buy.css">
 
 </head>
 <body>
-   
-<!-- header section starts  -->
+
+<!-- Pjesa e header - fillimi  -->
 
 <header class="header">
+   <nav class="navbar">
+      <div class="flex">
+         <div class="logo">
+            <a href="home.html"><i class="fas fa-house"></i>KosovaHome</a>
+         </div>
+         <div class="menu">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div class="menu-content">
+               <ul>
+                  <li><a href="home.html">Kryefaqja</a></li>
+                  <li><a href="buy.html">Blej</a></li>
+                  <li><a href="listopronën.html">Listo Pronën</a></li>
+                  <li><a href="#">Me qera<i class="fas fa-angle-down"></i></a>
+                     <ul>
+                        <li><a href="#">Shtëpi</a></li>
+                        <li><a href="#">Banesë</a></li>
+                        <li><a href="#">Tokë</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="about.html">Rreth nesh</a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="account">
+            <ul>
+               <li> <a>Llogaria<i class="fas fa-angle-down"></i></a>
+                  <ul>
+                     <li><a href="login.html">Login</a></li>
+                     <li><a href="register.html">Register</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+</header>
 
-    <nav class="navbar nav-1">
-       <section class="flex">
-          <a href="home.html" class="logo"><i class="fas fa-house"></i>MyHome</a>
-       </section>
-    </nav>
+<!-- Pjesa e header - fundi -->
  
-    <nav class="navbar nav-2">
-       <section class="flex">
-          <div id="menu-btn" class="fas fa-bars"></div>
- 
-          <div class="menu">
-             <ul>
-                <li><a href="home.html">Kryefaqja</a></li>
-                <li><a href="buy.html">Blej</a></li>
-                <li><a href="#">Listo Pronën</a></li>
-                <li><a href="#">rent<i class="fas fa-angle-down"></i></a>
-                   <ul>
-                      <li><a href="#">house</a></li>
-                      <li><a href="#">flat</a></li>
-                      <li><a href="#">shop</a></li>
-                   </ul>
-                </li>
-                <li><a href="about.html">rreth nesh</a></li>
-             </ul>
-          </div>
- 
-          <ul>
-             <li><a href="#">account <i class="fas fa-angle-down"></i></a>
-                <ul>
-                   <li><a href="login.html">login</a></li>
-                   <li><a href="register.html">register</a></li>
-                </ul>
-             </li>
-          </ul>
-       </section>
-    </nav>
- 
- </header>
- 
- <!-- header section ends -->
- 
-<!-- home section starts  -->
+<!-- fillimi i home  -->
 
 <div class="home">
 
@@ -71,9 +70,25 @@
           <div class="box">
              <p>Zhgjedh Qytetin <span>*</span></p>
              <select name="type" class="input" required>
-                <option value="city">Vushtrri</option>
-                <option value="city">Mitrovicë</option>
-                <option value="city">Prishtinë</option>
+               <option value="prishtina">Prishtina</option>
+               <option value="prizren">Prizren</option>
+               <option value="ferizaj">Ferizaj</option>
+               <option value="peje">Pejë</option>
+               <option value="gjakove">Gjakovë</option>
+               <option value="gjilan">Gjilan</option>
+               <option value="mitrovica">Mitrovicë</option>
+               <option value="podujeva">Podujeva</option>
+               <option value="vushtrri">Vushtrri</option>
+               <option value="suhareke">Suharekë</option>
+               <option value="rahovec">Rahovec</option>
+               <option value="drenas">Drenas</option>
+               <option value="lipjan">Lipjan</option>
+               <option value="malisheve">Malishevë</option>
+               <option value="kamenice">Kamenicë</option>
+               <option value="viti">Viti</option>
+               <option value="decan">Deçan</option>
+               <option value="istog">Istog</option>
+               <option value="kline">Klinë</option>
              </select>
           </div>
           <div class="box">
@@ -86,13 +101,13 @@
           </div>
           <div class="box">
                 <p>Çmimi minimal <span>*</span></p>
-                <input type="number" name="min_Price"  maxlength="20" placeholder="Çmimi minimal" class="input">
+                <input type="number" name="min_Price"  maxlength="20" placeholder="€" class="input">
              </div>
              <div class="box">
                 <p>Çmimi maksimal <span>*</span></p>
-                <input type="number" name="lmax_Price" maxlength="20" placeholder="Çmimi maksimal" class="input">
+                <input type="number" name="lmax_Price" maxlength="20" placeholder="€" class="input">
              </div>
-             <input type="submit" value="search property" name="search" class="btn">
+             <input type="submit" value="Kërko" name="search" class="btn">
           </div>
        </form>
  
@@ -100,46 +115,43 @@
  
  </div>
  
- <!-- home section ends -->
+ <!-- mbarimi i home -->
 
- <!-- footer section starts  -->
+<!-- Footer - fillimi  -->
 
 <footer class="footer">
 
-    <section class="flex">
- 
-       <div class="box">
-          <a href="tel:1234567890"><i class="fas fa-phone"></i><span>123456789</span></a>
-          <a href="tel:1112223333"><i class="fas fa-phone"></i><span>1112223333</span></a>
-          <a href="mailto:shaikhanas@gmail.com"><i class="fas fa-envelope"></i><span>shaikhanas@gmail.com</span></a>
-          <a href="#"><i class="fas fa-map-marker-alt"></i><span>mumbai, india - 400104</span></a>
-       </div>
- 
-       <div class="box">
-          <a href="home.html"><span>home</span></a>
-          <a href="about.html"><span>about</span></a>
-          <a href="contact.html"><span>contact</span></a>
-          <a href="listings.html"><span>all listings</span></a>
-          <a href="#"><span>saved properties</span></a>
-       </div>
- 
-       <div class="box">
-          <a href="#"><span>facebook</span><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><span>twitter</span><i class="fab fa-twitter"></i></a>
-          <a href="#"><span>linkedin</span><i class="fab fa-linkedin"></i></a>
-          <a href="#"><span>instagram</span><i class="fab fa-instagram"></i></a>
- 
-       </div>
- 
-    </section>
- 
- 
- </footer>
- 
- <!-- footer section ends -->
+   <section class="flex">
+
+      <div class="box">
+         <a href="tel:1234567890"><i class="fas fa-phone"></i><span>044886775</span></a>
+         <a href="tel:1112223333"><i class="fas fa-phone"></i><span>038446719</span></a>
+         <a href="mailto:shaikhanas@gmail.com"><i class="fas fa-envelope"></i><span>kososvahome@gmail.com</span></a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i><span>Mitrovic, Kosovë, 40000</span></a>
+      </div>
+
+      <div class="box">
+         <a href="home.html"><span>Kryefaqja</span></a>
+         <a href="about.html"><span>Rreth nesh</span></a>
+         <a href="contact.html"><span>Rreth nesh</span></a>
+      </div>
+
+      <div class="box">
+         <a href="#"><span>Facebook</span><i class="fab fa-facebook-f"></i></a>
+         <a href="#"><span>Twitter</span><i class="fab fa-twitter"></i></a>
+         <a href="#"><span>Linkedin</span><i class="fab fa-linkedin"></i></a>
+         <a href="#"><span>Instagram</span><i class="fab fa-instagram"></i></a>
+
+      </div>
+
+   </section>
+
+
+</footer>
+
+<!-- Footer - fundi -->
  
  
- <!-- custom js file link  -->
  <script src="../JavaScript/script.js"></script>
  
  </body>
