@@ -6,18 +6,12 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Home-Hyni</title>
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="image/icon">
-    <link rel="icon" href="../images/home-icon.png"type="image/x-icon"/>
-   
-    <script src="../JavaScript/script.js" defer></script>
-
+   <link rel="icon" href="../images/home-icon.png" type="image/x-icon"/>
+   <!-- <script src="../JavaScript/logreg.js" defer></script> -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
    <link rel="stylesheet" href="../CSS/login.css">
-
 </head>
 <body>
-
-<!-- Pjesa e header - fillimi  -->
 
 <header class="header">
    <nav class="navbar">
@@ -45,7 +39,7 @@
          </div>
          <div class="account">
             <ul>
-               <li> <a>Llogaria<i class="fas fa-angle-down"></i></a>
+               <li><a>Llogaria<i class="fas fa-angle-down"></i></a>
                   <ul>
                      <li><a href="login.html">Login</a></li>
                      <li><a href="register.html">Register</a></li>
@@ -57,62 +51,39 @@
    </nav>
 </header>
 
-<!-- Pjesa e header - fundi -->
-
-<!-- login - fundi  -->
-
 <section class="form-container">
-
-   <form action="/" method="post" id="login-form">
+   <form id="login-form">
       <h3>welcome back!</h3>
       <input type="email" name="email" required maxlength="50" placeholder="enter your email" class="box">
-      <input type="password" name="pass" required maxlength="20" placeholder="enter your password" class="box">
+      <input type="password" name="password" required maxlength="20" placeholder="enter your password" class="box">
       <p>don't have an account? <a href="register.html">register new</a></p>
       <input type="submit" value="login now" name="submit" class="btn">
-   </form>
-
+  </form>
 </section>
 
-<!-- login- fundi -->
-
-
-
-<!-- Footer - fillimi  -->
-
 <footer class="footer">
-
    <section class="flex">
-
       <div class="box">
          <a href="tel:1234567890"><i class="fas fa-phone"></i><span>044886775</span></a>
          <a href="tel:1112223333"><i class="fas fa-phone"></i><span>038446719</span></a>
          <a href="mailto:shaikhanas@gmail.com"><i class="fas fa-envelope"></i><span>kososvahome@gmail.com</span></a>
          <a href="#"><i class="fas fa-map-marker-alt"></i><span>Mitrovic, Kosovë, 40000</span></a>
       </div>
-
       <div class="box">
          <a href="home.html"><span>Kryefaqja</span></a>
          <a href="about.html"><span>Rreth nesh</span></a>
          <a href="contact.html"><span>Rreth nesh</span></a>
       </div>
-
       <div class="box">
          <a href="#"><span>Facebook</span><i class="fab fa-facebook-f"></i></a>
          <a href="#"><span>Twitter</span><i class="fab fa-twitter"></i></a>
          <a href="#"><span>Linkedin</span><i class="fab fa-linkedin"></i></a>
          <a href="#"><span>Instagram</span><i class="fab fa-instagram"></i></a>
-
       </div>
-
    </section>
-
-
 </footer>
 
-<!-- Footer - fundi -->
-
+<script src="../JavaScript/login.js"></script>
 <script src="../JavaScript/script.js"></script>
-<script src="../JavaScript/logreg.js"></script>
-
 </body>
 </html>
